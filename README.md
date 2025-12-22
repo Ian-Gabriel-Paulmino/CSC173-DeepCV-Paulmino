@@ -427,3 +427,6 @@ For Philippine airports (NAIA, Laguindingan, Davao):
 [5] Shrivastava, A., Gupta, A., & Girshick, R. (2016). "Training Region-based Object Detectors with Online Hard Example Mining." CVPR. IEEE.  
 
 ---
+
+## GitHub Pages
+View this project site: [https://ian-gabriel-paulmino.github.io/CSC173-DeepCV-Paulmino/](https://ian-gabriel-paulmino.github.io/CSC173-DeepCV-Paulmino/)
