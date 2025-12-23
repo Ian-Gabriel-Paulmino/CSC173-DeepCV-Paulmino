@@ -9,7 +9,7 @@
 
 ## Abstract
 
-Bird strikes pose a significant aviation safety hazard, costing the global airline industry over USD 900 million annually and presenting ongoing risks to aircraft operations, particularly at regional airports with limited mitigation infrastructure. This study presents an applied, vision-based bird detection system for aviation safety using a lightweight YOLO11n-Oriented Bounding Box (OBB) model trained on a custom dataset of 3,463 bird images with extensive augmentation. By leveraging OBB detection, the system achieves more precise localization of birds in arbitrary flight orientations compared to conventional horizontal bounding box approaches. To evaluate robustness, a controlled auxiliary analysis compared a baseline model trained solely on bird images with an experimental model incorporating 326 explicit empty-sky negative samples, revealing that the baseline already achieved strong performance (87.8% mAP@0.5, 82.8% precision) with no statistically meaningful improvement from explicit negative supervision (88.1% mAP@0.5, 82.2% precision), indicating inherent background discrimination in the YOLO11 architecture. Benchmarking against a standard pre-trained YOLO11n (COCO) model further demonstrated a 3.94× improvement in detection performance (0.88 vs. 0.22 mAP@0.5), underscoring the necessity of domain-specific OBB training for avian detection. Overall, the proposed system provides a validated, data-efficient foundation for deployable, real-time bird monitoring to support aviation safety operations.
+Bird strikes pose a significant aviation safety hazard, with over 480 bird strike incidents in some domestic airports since 2024 according to CAAP [6] [7] This presents ongoing risks to aircraft operations, particularly at regional airports with limited mitigation infrastructure. This study presents an applied, vision-based bird detection system for aviation safety using a lightweight YOLO11n-Oriented Bounding Box (OBB) model trained on a custom dataset of 3,463 bird images with extensive augmentation. By leveraging OBB detection, the system achieves more precise localization of birds in arbitrary flight orientations compared to conventional horizontal bounding box approaches. To evaluate robustness, a controlled auxiliary analysis compared a baseline model trained solely on bird images with an experimental model incorporating 326 explicit empty-sky negative samples, revealing that the baseline already achieved strong performance (87.8% mAP@0.5, 82.8% precision) with no statistically meaningful improvement from explicit negative supervision (88.1% mAP@0.5, 82.2% precision), indicating inherent background discrimination in the YOLO11 architecture. Benchmarking against a standard pre-trained YOLO11n (COCO) model further demonstrated a 3.94× improvement in detection performance (0.88 vs. 0.22 mAP@0.5), underscoring the necessity of domain-specific OBB training for avian detection. Overall, the proposed system provides a validated, data-efficient foundation for deployable, real-time bird monitoring to support aviation safety operations.
 
 **Keywords:** Object Detection, YOLO11n-OBB, Transfer Learning, Ablation Study, Aviation Safety, Computer Vision
 
@@ -426,7 +426,19 @@ For Philippine airports (NAIA, Laguindingan, Davao):
 
 [5] Shrivastava, A., Gupta, A., & Girshick, R. (2016). "Training Region-based Object Detectors with Online Hard Example Mining." CVPR. IEEE.  
 
+[6] Arayata, M. C. (2025). "CAAP reports 9.7% drop in bird strike incidents." Philippine News Agency.  
+
+[7] Osorio, O. (2025). "Moves to curb bird strikes in PH airports intensified." Malaya Business Insight.  
+
+
 ---
 
 ## GitHub Pages
 View this project site: [https://ian-gabriel-paulmino.github.io/CSC173-DeepCV-Paulmino/](https://ian-gabriel-paulmino.github.io/CSC173-DeepCV-Paulmino/)
+
+## Youtube Link
+Youtube link at: [https://youtu.be/OcgkyW6YMPA](https://youtu.be/OcgkyW6YMPA)
+
+
+## Demo Link
+Demo vid: [https://drive.google.com/file/d/120LcKwRQcsMXf3v40tzvN6FfZQzASCTj/view?usp=drive_link](https://drive.google.com/file/d/120LcKwRQcsMXf3v40tzvN6FfZQzASCTj/view?usp=drive_link)
